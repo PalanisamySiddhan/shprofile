@@ -1,22 +1,32 @@
 import logo from './logo.svg';
+import sharlogo from './sharlogo.jpeg'
+import config from './const.json'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={sharlogo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        {config.Skill.join('\n')}
         </p>
+        <p>
+        {config.Sport}
+        </p>
+        <div>
+          <p>Movies</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://youtu.be/hnlK_eYtAuw?si=dfsVcPCmF39Q16Iu"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Crash Landing
         </a>
+
+        </div>
+        
       </header>
     </div>
   );
